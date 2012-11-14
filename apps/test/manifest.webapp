@@ -12,10 +12,10 @@
   },
   "default_locale": "en-US",
   "icons": {
-    "256": "http://slitscan.leedsjs.org/style/icons/256.png",
-    "128": "http://slitscan.leedsjs.org/style/icons/128.png",
-    "48":  "http://slitscan.leedsjs.org/style/icons/48.png",
-    "32":  "http://slitscan.leedsjs.org/style/icons/32.png",
-    "16":  "http://slitscan.leedsjs.org/style/icons/16.png"
+    "256": "http://test.leedsjs.org/style/icons/256.png",
+    "128": "http://test.leedsjs.org/style/icons/128.png",
+    "48":  "http://test.leedsjs.org/style/icons/48.png",
+    "32":  "http://test.leedsjs.org/style/icons/32.png",
+    "16":  "http://test.leedsjs.org/style/icons/16.png"
   }
 }
