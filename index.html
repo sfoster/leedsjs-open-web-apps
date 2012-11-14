@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>LeedsJs - Open Web Apps</title>
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<link rel="stylesheet" href="./reveal.js/css/reveal.min.css">
+	<link rel="stylesheet" href="./reveal.js/css/theme/sky.css" id="theme">
+
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="./reveal.js/lib/css/zenburn.css">
+	<style>
+		.reveal .banner > img.title-image {
+			display: inline-block;
+			vertical-align: middle;
+			border: none;
+		}
+		.reveal .banner > span {
+			display: inline-block;
+			margin-top: 10px;
+			vertical-align: middle;
+		}
+		.reveal ul > li {
+			margin: 0.3em;
+		}
+	</style>
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+		document.write( '<link rel="stylesheet" href="./reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+</head>
+<body>
+	
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+
+			<section>
+				<h1>Open Web Apps</h1>
+				<h2 class="banner">
+					<img class="title-image" src="assets/leeds_dot_js_logo_reasonably_small.png" width="128" height="128" alt="Leeds Dot Js Logo Reasonably Small">
+					<span>LeedsJs</span>
+				</h2>
+				<ul>
+					<li>Follow us on Twitter: <a href="https://twitter.com/leedsjs">@leedsjs</a></li>
+					<li><a href="http://leedsjs.org">http://leedsjs.org</a></li>
+				</ul>
+			</section>
+
+			<section data-markdown>
+				<script type="text/template">
+					## Outline
+					
+					* What are open web apps and where do they run? 
+					* How to make (here&apos;s one we prepared earlier)
+					* The manifest
+					* Deployment
+					* Ingredients: The device APIs
+					* Gotchas
+				</script>
+			</section>
+
+			<section>
+				<h1>Ingredients</h1>
+			</section>
+
+			<section>
+				<h1>Serving Suggestions</h1>
+			</section>
+
+			<section>
+				<h1>The Manifest</h1>
+			</section>
+
+			<section>
+				<h1>Device APIs</h1>
+			</section>
+
+			<section>
+				<h1>Deployment</h1>
+			</section>
+			
+			<section>
+				<h1>Gotchas</h1>
+			</section>
+		</div>
+	</div>
+		
+	<script src="reveal.js/lib/js/head.min.js"></script>
+	<script src="reveal.js/js/reveal.min.js"></script>
+
+	<script>
+
+		// Full list of configuration options available here:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+			theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+			transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+			// Optional libraries used to extend on reveal.js
+			dependencies: [
+				{ src: './reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: './reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: './reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: './reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+				{ src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+			]
+		});
+
+	</script>
+</body>
+</html>
