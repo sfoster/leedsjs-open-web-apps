@@ -1,0 +1,57 @@
+{
+  "name": "Camera",
+  "description": "Gaia Camera",
+  "type": "certified",
+  "launch_path": "/index.html",
+  "orientation": "portrait-primary",
+  "fullscreen": true,
+  "developer": {
+    "name": "The Gaia Team",
+    "url": "https://github.com/mozilla-b2g/gaia"
+  },
+  "permissions": {
+    "device-storage:pictures":{ "access": "createonly" },
+    "device-storage:videos":{ "access": "createonly" },
+    "settings":{ "access": "readonly" },
+    "camera":{},
+    "geolocation":{}
+  },
+  "activities": {
+    "record": {
+      "filters": {
+        "type": "photos"
+       },
+      "disposition": "window"
+    },
+    "pick": {
+      "filters": {
+        "type": ["image/jpeg"]
+       },
+      "returnValue": true,
+      "disposition": "inline"
+    }
+  },
+  "locales": {
+    "ar": {
+      "name": "الكاميرا",
+      "description": " Gaiaالكاميرا"
+    },
+    "en-US": {
+      "name": "Camera",
+      "description": "Gaia Camera"
+    },
+    "fr": {
+      "name": "Photo",
+      "description": "Appareil photo Gaia"
+    },
+    "zh-TW": {
+      "name": "相機",
+      "description": "Gaia 相機"
+    }
+  },
+  "default_locale": "en-US",
+  "icons": {
+    "120": "/style/icons/Camera.png",
+    "60": "/style/icons/60/Camera.png"
+  }
+}
