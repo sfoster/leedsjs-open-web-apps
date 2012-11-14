@@ -1,0 +1,3 @@
+[submodule "leedsjs-open-web-apps"]
+	path = leedsjs-open-web-apps
+	url = git@github.com:sfoster/leedsjs-open-web-apps.git
