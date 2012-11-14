@@ -1,6 +1,6 @@
 {
   "name": "Gaia Camera",
-  "package_path": "http://localhost:3000/apps/camera.zip",
+  "package_path": "http://sfoster.github.com/leedsjs-open-web-apps/apps/camera.zip",
   "version": "1.0",
   "release_notes": "First release",
   "icons": {
