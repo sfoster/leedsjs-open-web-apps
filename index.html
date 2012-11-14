@@ -28,6 +28,25 @@
 		.reveal ul > li {
 			margin: 0.3em;
 		}
+		.reveal li.img-item {
+			list-style-type: none;
+			position: relative;
+			padding: 10px 0 0 100px;
+		}
+		.reveal li.img-item > img {
+			position: absolute;
+			border: none;
+			top: 0; left: 0;
+			display: block;
+		}
+		.reveal li.img-item > p {
+			padding: 20px 10px 0 0;
+		}
+		.reveal a.install {
+			font-style: italic;
+			display: inline-block;
+			text-decoration: underline;
+		}
 	</style>
 	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 	<script>
@@ -43,16 +62,23 @@
 
 			<section>
 				<h1>Open Web Apps</h1>
-				<h2 class="banner">
+				<ul>
+					<li class="img-item">
+						<img src="apps/camera/style/icons/60/Camera.png" width="64" height="64" alt="Camera">
+						<p><a href="./apps/camera/">Gaia Camera</a> (<a href="./apps/camera/manifest.webapp" class="install">Install</a>)</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h1 class="banner">
 					<img class="title-image" src="assets/leeds_dot_js_logo_reasonably_small.png" width="128" height="128" alt="Leeds Dot Js Logo Reasonably Small">
 					<span>LeedsJs</span>
-				</h2>
+				</h1>
 				<ul>
 					<li>Follow us on Twitter: <a href="https://twitter.com/leedsjs">@leedsjs</a></li>
 					<li><a href="http://leedsjs.org">http://leedsjs.org</a></li>
 				</ul>
 			</section>
-
 			<section data-markdown>
 				<script type="text/template">
 					## Outline
