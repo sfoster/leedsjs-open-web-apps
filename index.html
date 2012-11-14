@@ -145,25 +145,6 @@
 				// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 			]
 		});
-		window.addEventListener('DOMContentLoaded', function(){
-			if(navigator.mozApps) {
-				var installButtons = document.querySelectorAll('a[data-launch]');
-				Array.prototype.forEach.call(installButtons, function(btn){
-						btn.onclick = function(evt){
-							console.log("Attempting install of " + btn.text + " from: " + btn.href);
-							evt.preventDefault();
-							var request = navigator.mozApps.install( btn.href );
-							request.onsuccess = function() {
-								location.href = btn.getAttribute('data-launch');
-							};
-							request.onerror = function(err) {
-								alert("Error installing app: "+ this.error.name);
-							};
-							return false;
-						};
-				});
-			}
-		})
 
 	</script>
 </body>

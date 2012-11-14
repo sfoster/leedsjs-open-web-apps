@@ -1,0 +1,21 @@
+{
+  "name": "Tester",
+  "description": "No-content test app",
+  "launch_path": "/app.html",
+  "orientation": "portrait-primary",
+  "fullscreen": true,
+  "developer": {
+    "name": "Sam Foster",
+    "url": "https://github.com/sfoster"
+  },
+  "permissions": {
+  },
+  "default_locale": "en-US",
+  "icons": {
+    "256": "http://slitscan.leedsjs.org/style/icons/256.png",
+    "128": "http://slitscan.leedsjs.org/style/icons/128.png",
+    "48":  "http://slitscan.leedsjs.org/style/icons/48.png",
+    "32":  "http://slitscan.leedsjs.org/style/icons/32.png",
+    "16":  "http://slitscan.leedsjs.org/style/icons/16.png"
+  }
+}
