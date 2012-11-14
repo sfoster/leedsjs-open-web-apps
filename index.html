@@ -65,7 +65,7 @@
 				<ul>
 					<li class="img-item">
 						<img src="apps/camera/style/icons/60/Camera.png" width="64" height="64" alt="Camera">
-						<p><a href="./apps/camera/">Gaia Camera</a> (<a href="./apps/camera/manifest.webapp" class="install">Install</a>)</p>
+						<p><a href="./apps/camera/">Gaia Camera</a> (<a href="./apps/camera/manifest.webapp" data-launch="./apps/camera/" class="install">Install</a>)</p>
 					</li>
 				</ul>
 			</section>
@@ -145,6 +145,25 @@
 				// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 			]
 		});
+		window.addEventListener('DOMContentLoaded', function(){
+			if(navigator.mozApps) {
+				var installButtons = document.querySelectorAll('a[data-launch]');
+				Array.prototype.forEach.call(installButtons, function(btn){
+						btn.onclick = function(evt){
+							console.log("Attempting install of " + btn.text);
+							evt.preventDefault();
+							var request = navigator.mozApps.install( btn.href );
+							request.onsuccess = function() {
+								location.href = btn.getAttribute('data-launch');
+							};
+							request.onerror = function(err) {
+								alert("Error installing app: "+ this.error.name);
+							};
+							return false;
+						};
+				});
+			}
+		})
 
 	</script>
 </body>
